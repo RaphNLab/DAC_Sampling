@@ -13,8 +13,8 @@
 #include <libopencm3/stm32/dma.h>
 
 
-#define DAC_DATA_REG (0x40007400UL + 0x08)
-
+#define DAC_16BIT_DATA_REG (0x40007400UL + 0x08)
+#define DAC_8BIT_DATA_REG  (0x40007400UL + 0x10)
 
 
 extern const uint16_t sine_wave[32];

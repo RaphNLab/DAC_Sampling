@@ -67,7 +67,7 @@ void timer_debounce_setup(void)
 void timer_adc_external_trigger_setup(void)
 {
 	rcc_periph_clock_enable(RCC_TIM4);
-	nvic_enable_irq(NVIC_TIM4_IRQ);
+	//nvic_enable_irq(NVIC_TIM4_IRQ);
 
 	timer_set_prescaler(TIM4, 24000);
 	timer_set_period(TIM4, 25);
