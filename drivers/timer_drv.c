@@ -63,17 +63,19 @@ void timer_debounce_setup(void)
 	timer_enable_irq(TIM3, TIM_DIER_UIE);
 }
 
-/* Configured to generate timer event every 100ms */
+/* Configured to generate timer event every 25ms */
 void timer_adc_external_trigger_setup(void)
 {
 	rcc_periph_clock_enable(RCC_TIM4);
 	//nvic_enable_irq(NVIC_TIM4_IRQ);
 
 	timer_set_prescaler(TIM4, 24000);
-	timer_set_period(TIM4, 25);
+	timer_set_period(TIM4, 10);
 	timer_set_mode(TIM4, TIM_CR1_CKD_CK_INT, TIM_CR1_CMS_EDGE, TIM_CR1_DIR_UP);
 
 	timer_set_master_mode(TIM4, TIM_CR2_MMS_UPDATE);
+	//timer_enable_irq(TIM4, TIM_DIER_UIE);
+
 	timer_enable_counter(TIM4);
 }
 

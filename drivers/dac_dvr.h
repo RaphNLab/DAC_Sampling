@@ -17,9 +17,6 @@
 #define DAC_8BIT_DATA_REG  (0x40007400UL + 0x10)
 
 
-extern const uint16_t sine_wave[32];
-extern const uint8_t escalator[8];
-
 void clock_setup(void);
 void dac_setup(void);
 void dma_setup(void);
