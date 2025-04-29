@@ -12,7 +12,7 @@ on:
           
 # Must match the project() name in CMakeLists.txt, variable used below to copy .hex file
 env:
-    APP_NAME: DAC_Sampling
+    APP_NAME: dac_Sampling
     
 # Allow this workflow to write back to the repository
 permissions:

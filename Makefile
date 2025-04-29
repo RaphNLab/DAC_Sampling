@@ -1,4 +1,4 @@
-PROJECT = DAC_Sampling
+PROJECT = dac_Sampling
 BUILD_DIR = bin
 DRIVER_DIR = drivers
 
