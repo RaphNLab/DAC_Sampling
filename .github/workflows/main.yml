@@ -44,7 +44,7 @@ jobs:
         run: docker create --name stm32-container stm32-image
         
       - name: Copy out Intel Hex file
-        run: docker cp stm32-container:/project/${APP_NAME}.elf ./${APP_NAME}.elf
+        run: docker cp stm32-container:/project/${APP_NAME}/${APP_NAME}.elf ./${APP_NAME}.elf
         
       - name: Put environment variable into the env context
         run: echo "app_name=$APP_NAME" >> $GITHUB_ENV
