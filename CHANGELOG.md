@@ -1,18 +1,17 @@
 # CHANGELOG.md
 
 Fixes:
- - Added extra license information
- - Restructured build for SDK
- - Added Unity test framework
- - Added CMake presets for tests
+ - Some meaning full information
 
 Features:
- - Added UART shell and RTT
+ - Added DAC sampling with DMA
 
 ## 0.0.1 (29.04.2025)
 
 Fixes:
  - None
+ - Change log added
 
 Features:
- - Initial version of blinky
+ - Initial version of dac_sampling
+ - DAC DMA generated waveforms 
